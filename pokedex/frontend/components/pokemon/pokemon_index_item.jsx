@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PokemonIndexItem = ({pokemon}) => {
     return (
         
-        <li key={`pokemon-index-item-${pokemon.id}`}>
+        <li key={`pokemon-index-item-${pokemon.id}`} className='pokemon-index-item'>
             <Link key={`pokemon-index-link-${pokemon.id}`}
                 to={`/pokemon/${pokemon.id}`}> 
                 {pokemon.id}
